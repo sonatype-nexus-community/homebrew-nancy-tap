@@ -8,7 +8,7 @@ This is a tap repo for `nancy` on Homebrew!
 
 To install via Homebrew:
 
-- `brew tap sonatype-nexus-community/nancy-homebrew-tap`
+- `brew tap sonatype-nexus-community/homebrew-nancy-tap`
 - `brew install nancy`
 
 You can get more usage information for `nancy` at [the main repo](https://github.com/sonatype-nexus-community/nancy).
