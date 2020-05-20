@@ -2,16 +2,16 @@
 class Nancy < Formula
   desc "A tool to check for vulnerabilities in your Golang dependencies, powered by Sonatype OSS Index"
   homepage "https://github.com/sonatype-nexus-community/nancy"
-  version "0.2.5"
+  version "0.2.6"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/sonatype-nexus-community/nancy/releases/download/v0.2.5/nancy-darwin.amd64-v0.2.5.tar.gz"
-    sha256 "fce98d3b77aec3e728778f319a88d5c767b8228e4adc6b2e82629a809f3c59ce"
+    url "https://github.com/sonatype-nexus-community/nancy/releases/download/v0.2.6/nancy-darwin.amd64-v0.2.6.tar.gz"
+    sha256 "920a1616317829740390bdb13f47a3f79dfe7be16fb15ce35d5e6de0e4ef27c3"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/sonatype-nexus-community/nancy/releases/download/v0.2.5/nancy-linux.amd64-v0.2.5.tar.gz"
-      sha256 "ac0a42e0a0a78debe33689bb25e8df7e3e458c3704cbf159460cfa5ae0e656ad"
+      url "https://github.com/sonatype-nexus-community/nancy/releases/download/v0.2.6/nancy-linux.amd64-v0.2.6.tar.gz"
+      sha256 "b06bc32cba199a730f74f912f4861b97530a8f2cbacde1fe1a8bdec5faa7b119"
     end
   end
 
