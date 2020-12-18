@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://github.com/sonatype-nexus-community/nancy/blob/master/docs/images/nancy.png" width="350"/>
+    <img src="https://raw.githubusercontent.com/sonatype-nexus-community/nancy/main/docs/images/nancy.png" width="350"/>
 </p>
 
 # Nancy on Homebrew
