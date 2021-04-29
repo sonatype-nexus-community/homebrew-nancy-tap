@@ -5,16 +5,20 @@
 class Nancy < Formula
   desc "A tool to check for vulnerabilities in your Golang dependencies, powered by Sonatype OSS Index"
   homepage "https://github.com/sonatype-nexus-community/nancy"
-  version "1.0.17"
+  version "1.0.19"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.17/nancy-v1.0.17-darwin-amd64.tar.gz"
-    sha256 "87b109d8172fc5cac83ec92fae449b4cd9bc63a06ccd3a738b1853dc5d269d91"
+    url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.19/nancy-v1.0.19-darwin-amd64.tar.gz"
+    sha256 "b0e6d62ff309f207b05e500d449b527b8b97c670426b592b8ed9f853a9d9fde4"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.17/nancy-v1.0.17-linux-amd64.tar.gz"
-    sha256 "91ad2c7fa3d6d775c59b5c7e7f59d16c6de0fda95ffdc4c539b2ce201e0ce433"
+    url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.19/nancy-v1.0.19-linux-amd64.tar.gz"
+    sha256 "cedb4c0a40da95e3d98a7338ce74712892a7122f51bab0ff740ff64bac375997"
+  end
+  if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+    url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.19/nancy-v1.0.19-linux-arm64.tar.gz"
+    sha256 "65e40892d766f028bc173a4c2bdfd35dad67893f597d2c8d15a7964e8e369ce2"
   end
 
   def install
