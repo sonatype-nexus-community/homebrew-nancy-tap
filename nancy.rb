@@ -5,24 +5,24 @@
 class Nancy < Formula
   desc "A tool to check for vulnerabilities in your Golang dependencies, powered by Sonatype OSS Index"
   homepage "https://github.com/sonatype-nexus-community/nancy"
-  version "1.0.20"
+  version "1.0.21"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.20/nancy-v1.0.20-darwin-amd64.tar.gz"
-    sha256 "6fa0d8235852e653ec86cfb87c97ec1af39a6641605c9f5fca97d7e12fa2512a"
+    url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.21/nancy-v1.0.21-darwin-amd64.tar.gz"
+    sha256 "6dfb6a4ecea63b1799032fb26822487824eff5c188006263196ffbdbbe224105"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.20/nancy-v1.0.20-darwin-arm64.tar.gz"
-    sha256 "3902e5d9106ee4f69b80ab99fb353934b50cb20b508ec8d51e957b5635bf7a57"
+    url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.21/nancy-v1.0.21-darwin-arm64.tar.gz"
+    sha256 "c55d9d554cd0f70e457f7c6ba61b9fb1d23528fed0bb91e613803726bdddd4c4"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.20/nancy-v1.0.20-linux-amd64.tar.gz"
-    sha256 "31b0037369e4a8108c5f03249058d2918117b3647cd6b7f8d1bc6bb5e5603bfa"
+    url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.21/nancy-v1.0.21-linux-amd64.tar.gz"
+    sha256 "77dcf21ce6276cdb08ba5247b7c272ff495202fd4e719632bc7c5df5ade00aef"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.20/nancy-v1.0.20-linux-arm64.tar.gz"
-    sha256 "7e40d9fa6307e62b4d9c7bd1b6cd27ebb5bf8f9c4f3339ed1cce08f6ebfd97f1"
+    url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.21/nancy-v1.0.21-linux-arm64.tar.gz"
+    sha256 "3c21ce551859eba6aa15deb6b16a16d3e779fad229e6a1ff62b895ac672204a2"
   end
 
   def install
