@@ -5,28 +5,28 @@
 class Nancy < Formula
   desc "A tool to check for vulnerabilities in your Golang dependencies, powered by Sonatype OSS Index"
   homepage "https://github.com/sonatype-nexus-community/nancy"
-  version "1.0.24"
+  version "1.0.25"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.24/nancy-v1.0.24-darwin-amd64.tar.gz"
-      sha256 "9c2247c5ee1324a02887a347d58193b71083a89610f73d9367974978b4e98ec1"
+      url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.25/nancy-v1.0.25-darwin-amd64.tar.gz"
+      sha256 "f5bf91481be95608d6840a2e99333affc7e96d8d263e374f68b79255c9ad8277"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.24/nancy-v1.0.24-darwin-arm64.tar.gz"
-      sha256 "aa7b660b9820c1361e6e7a6225bfb129f478778e10956a888ea243a008d624b1"
+      url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.25/nancy-v1.0.25-darwin-arm64.tar.gz"
+      sha256 "5e7c5535a9197411bcaebc679cbdd630dd7668d272ba1348721eaebbfea2e514"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.24/nancy-v1.0.24-linux-amd64.tar.gz"
-      sha256 "1ac325c173a50a40a3196eded7fb7adf7e26751710ecf167de0b96f7731bd39f"
+      url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.25/nancy-v1.0.25-linux-amd64.tar.gz"
+      sha256 "bc2d07582372f8e07fe923d4e77002f163d6bce6c01b356a8798a83c7320250e"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.24/nancy-v1.0.24-linux-arm64.tar.gz"
-      sha256 "112944dab1971be00ceef9ec9d22eae9bfd0b94a1ff30f508473d5a60697a724"
+      url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.25/nancy-v1.0.25-linux-arm64.tar.gz"
+      sha256 "21474fd8004c5c1c5d4c10509622d7243e473d335d645fba35be42ce4ba595c0"
     end
   end
 
