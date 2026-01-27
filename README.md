@@ -15,21 +15,12 @@ You can get more usage information for `nancy` at [the main repo](https://github
 
 ## The Fine Print
 
-It is worth noting that this is **NOT SUPPORTED** by Sonatype, and is a contribution of ours
-to the open source community (read: you!)
-
 Remember:
 
-* Use this contribution at the risk tolerance that you have
-* Do NOT file Sonatype support tickets related to `nancy` support in regard to this project
-* DO file issues here on GitHub, so that the community can pitch in
+This project is part of the [Sonatype Nexus Community](https://github.com/sonatype-nexus-community) organization, which is not officially supported by Sonatype. Please review the latest pull requests, issues, and commits to understand this project's readiness for contribution and use.
 
-Phew, that was easier than I thought. Last but not least of all:
+-   File suggestions and requests on this repo through GitHub Issues, so that the community can pitch in
+-   Use or contribute to this project according to your organization's policies and your own risk tolerance
+-   Don't file Sonatype support tickets related to this project— it won't reach the right people that way
 
-Have fun creating and using `nancy` and the [Sonatype OSS Index](https://ossindex.sonatype.org/), we are glad to have you here!
-
-## Getting help
-
-Looking to contribute to our code but need some help? There's a few ways to get information:
-
-* Chat with us on [Gitter](https://gitter.im/sonatype-nexus-community/nancy)
+Last but not least of all - have fun!
