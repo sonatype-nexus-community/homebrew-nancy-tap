@@ -5,20 +5,20 @@
 class Nancy < Formula
   desc "A tool to check for vulnerabilities in your Golang dependencies, powered by Sonatype OSS Index"
   homepage "https://github.com/sonatype-nexus-community/nancy"
-  version "1.1.1"
+  version "1.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.1.1/nancy-v1.1.1-darwin-amd64.tar.gz"
-      sha256 "81166e750532037a10fb06d78729b3b2b11c166e26cbc5b8987a8c999839ba4b"
+      url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.2.0/nancy-v1.2.0-darwin-amd64.tar.gz"
+      sha256 "6eb27a43bf1c1bca90b1519f7e150e596cbb9b8fbd670805e3fa9db2767ea449"
 
       def install
         bin.install "nancy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.1.1/nancy-v1.1.1-darwin-arm64.tar.gz"
-      sha256 "13d40ad1990bd2a7e163ce7ec5cff1403867d08311a92c9fa8ef0776f41e18d5"
+      url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.2.0/nancy-v1.2.0-darwin-arm64.tar.gz"
+      sha256 "b7ea49c19e650cb48c0e140f7853e427d30ce794f4364e5b6184aa54e1f2d985"
 
       def install
         bin.install "nancy"
@@ -28,15 +28,15 @@ class Nancy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.1.1/nancy-v1.1.1-linux-amd64.tar.gz"
-      sha256 "9313deb3d767affcad08f6d0c0b45e27085ad9792ac1cf8aad189be8ef1a92e5"
+      url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.2.0/nancy-v1.2.0-linux-amd64.tar.gz"
+      sha256 "d36aa2fa5599e883366e94a976a7b162a28304d30176a111cdc09121cd4dcc1b"
       def install
         bin.install "nancy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.1.1/nancy-v1.1.1-linux-arm64.tar.gz"
-      sha256 "e79ab3c28ddd0d2f6b32ec255e90cf6544c082af03f847bfdb328299ba3f899f"
+      url "https://github.com/sonatype-nexus-community/nancy/releases/download/v1.2.0/nancy-v1.2.0-linux-arm64.tar.gz"
+      sha256 "b2c11f5c78552325699f280baa5f8c00d54599cc988f98ad6d2d792ceece0f58"
       def install
         bin.install "nancy"
       end
